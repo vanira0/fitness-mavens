@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate')%>
+<link rel="stylesheet" href="/stylesheets/stars.css" />
+<div class="container mt-4 px-4">
+    <h1 class="text-center mb-3 heading">Edit Review</h1>
+    <div class="row">
+        <div class="col"></div>
+        <form
+            class="col-lg-5 contact-form validated-form"
+            action="/reviews/<%= review._id %>?_method=PUT"
+            method="post"
+            novalidate
+        >
+            <div class="row rounded background-color">
+                <div class="col my-3">
+                    <label class="form-label contact-form">Leave rating:</label>
+                    <fieldset class="starability-heartbeat" required>
+                        <input
+                            type="radio"
+                            id="no-rate"
+                            class="input-no-rate"
+                            name="review[rating]"
+                            value="<%= review.rating %>"
+                            checked aria-label="No rating." />
+                        <input type="radio" id="first-rate1" name="review[rating]" value="1" />
+                        <label for="first-rate1" title="Terrible">1 star</label>
+                        <input type="radio" id="first-rate2" name="review[rating]" value="2" />
+                        <label for="first-rate2" title="Not good">2 stars</label>
+                        <input type="radio" id="first-rate3" name="review[rating]" value="3" />
+                        <label for="first-rate3" title="Average">3 stars</label>
+                        <input type="radio" id="first-rate4" name="review[rating]" value="4" />
+                        <label for="first-rate4" title="Very good">4 stars</label>
+                        <input type="radio" id="first-rate5" name="review[rating]" value="5" />
+                        <label for="first-rate5" title="Amazing">5 stars</label>
+                    </fieldset>
+
+                    <div class="mb-3">
+                        <label class="form-label contact-form" for="review">Write your review:</label>
+                        <textarea class="form-control" name="review[body]" id="review" cols="30" rows="6" required><%= review.body %></textarea>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+
+                    <button class="btn btn-dark w-100 mx-auto d-block">Post</button>
+                </div>
+            </div>
+        </form>
+        <div class="col"></div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<% layout('layouts/boilerplate')%>
+<link rel="stylesheet" href="/stylesheets/contact.css">
+<div class="container mt-4 px-4">
+    <h1 class="text-center mb-3 heading">Contact Us</h1>
+    <!-- <img src="/assets/dumblewithhand1.png" class="img-fluid mx-auto d-block" alt=""> -->
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <div class="typewriter mb-3 text-center">
+                <h2><i>MOVE BETTER LIVE BETTER.</i></h2>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <form action="/contactus" method="post">
+        <div class="row rounded background-color" >
+            <div class="col-md-6 mt-3">
+                <div class="mb-3">
+                    <label for="name" class="form-label contact-form">Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label contact-form" for="phone">Phone Number</label>
+                    <input class="form-control" type="text" id="phone" placeholder="Your Contact Number" />
+                </div>
+                <div class="mb-md-3">
+                    <label class="form-label contact-form" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" placeholder="abc@example" />
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="mb-3">
+                    <label class="form-label contact-form" for="message">Message</label>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="6"></textarea>
+                </div>
+                <button class="btn btn-dark w-100 mx-auto d-block">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+<% layout('layouts/boilerplate') %>
+<link rel="stylesheet" href="/stylesheets/about.css" />
+<div class="p-4 container">
+    <h1 class="heading text-center mb-3">Register</h1>
+    <div class="row">
+        <div class="shadow-lg p-3 mb-3 rounded col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <form action="/register" method="post" class="validated-form contact-form" novalidate>
+                <img
+                    src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                    alt=""
+                    class="card-img-top rounded"
+                />
+                <div class="my-2">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-control" type="text" id="username" name="username" required />
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" required />
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label" for="phone">Contact Number</label>
+                    <input class="form-control" type="text" id="phone" name="phone" required />
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" id="password" name="password" required />
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <button class="btn btn-dark w-100 mx-auto d-block mt-3">Register</button>
+            </form>
+            <!-- <img class="img-fluid" src="/assets/undraw_meditation_re_gll0.svg" alt="" /> -->
+        </div>
+    </div>
+</div>

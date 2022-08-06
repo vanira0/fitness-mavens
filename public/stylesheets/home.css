@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@200;400;500&family=Racing+Sans+One&display=swap");
+
+body {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 207, 208, 0.3)); */
+    background-color: #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 207, 208, 0.3)),
+        url("https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    background-size: cover;
+    background-position:right;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    background-attachment: fixed;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 207, 208, 0.3)),
+        url("https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.landing h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 250%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+.landing h1 i {
+    color: #0db24c;
+}
+.landing p {
+    font-size: 5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    line-height: 100%;
+    color: #fff;
+}
+
+.logo {
+    margin: auto;
+    text-align: center;
+    color: #0db24c;
+    text-transform: uppercase;
+    font-family: "Racing Sans One", cursive;
+    font-size: 80px;
+}
+
+.banner-image {
+    animation: myAnim 5s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* .about-bg {
+    height: 90vh;
+    background-image: linear-gradient(-60deg, rgba(244, 208, 63, 0.3), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1557564437-0995702f88fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-position: center;
+} */
+
+.head {
+    /* font-weight: 600; */
+    font-family: "Racing Sans One", cursive;
+    color: #d1f8e0;
+    /* text-shadow: 5px 10px #caf0f8; */
+    letter-spacing: 0.2rem;
+}
+
+.about-animation {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    animation: slideInBottom 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.btn-primary {
+    background-image: linear-gradient(-20deg, #00cdac 0%, #0db24c 100%);
+    /* background-color: #0db24c; */
+    border-color: #0db24c;
+}
+/* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+
+/* .gallary-bg {
+    background-image: linear-gradient(60deg, rgba(41, 50, 60, 0.7), rgba(72, 85, 99, 0.6)),
+        url("https://images.unsplash.com/photo-1579364046732-c21c2177730d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */

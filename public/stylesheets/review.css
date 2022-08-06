@@ -1,0 +1,17 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(48, 207, 208, 0.3));
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.post {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 4% 100%, 4% 7%);
+    color: #000;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.photo {
+    position: sticky;
+    top: 75px;
+}

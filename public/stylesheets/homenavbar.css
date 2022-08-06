@@ -1,0 +1,17 @@
+.navbar-nav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.navbar-brand {
+    color: #0db24c;
+    text-transform: uppercase;
+    font-family: "Racing Sans One", cursive;
+    font-size: 2rem;
+}
+.navbar-brand span:hover {
+    color: #0db24c;
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.home{
+    height: 100vh;
+    background-color: #555;
+    text-align: center;
+}
+.foot-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #0db24c;
+    height: 2px;
+    width: 60px;
+}
+
+.social-links a{
+    color: rgb(255, 255, 255);
+} 
+
+.footer{
+    background-color: #0db24c;
+}
+

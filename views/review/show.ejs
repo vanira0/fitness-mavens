@@ -1,0 +1,43 @@
+<% layout('layouts/boilerplate')%>
+<link rel="stylesheet" href="/stylesheets/review.css" />
+<h1 class="text-center mb-3 heading">Clients' Reviews</h1>
+<div class="container">
+    <a href="/reviews/new" class="btn btn-link">Leave a Review</a>
+    <div class="row">
+        <div class="col-md-6 offset-md-1">
+            <% for (let review of reviews){%>
+            <div class="row py-2">
+                <div class="col-2 text-center px-0">
+                    <img class="img-fluid w-75" src="/assets/undraw_male_avatar.svg" alt="" />
+                </div>
+                <div class="col-10 ps-0">
+                    <div class="mb-3 container py-3 ps-4 shadow-lg rounded post">
+                        <div class="container">
+                            <small class="text-muted"><i><%= review.author.username %> &#9679; <%= review.date.toDateString() %></i></small>
+                            <p class="card-text"><%= review.body %></p>
+                            <p>Rating:<%= review.rating%></p>
+                            <%  if( currentUser && review.author.equals(currentUser._id))  {%>
+                            <div class="card-body">
+                                <a
+                                    class="btn btn-primary btn-sm bi bi-pencil-square"
+                                    href="/reviews/<%=review._id%>/edit"
+                                ></a>
+                                <form class="d-inline" action="/reviews/<%=review._id%>?_method=DELETE" method="POST">
+                                    <button class="bi bi-trash btn btn-danger btn-sm"></button>
+                                </form>
+                            </div>
+                         <% } %> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <% } %>
+        </div>
+        <div class="col d-none d-lg-block text-center photo p-2">
+            <div class="photo">
+                <img class="img-fluid w-75 rounded" src="/assets/planner.jpeg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>

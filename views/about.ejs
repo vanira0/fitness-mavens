@@ -1,0 +1,97 @@
+<% layout('layouts/boilerplate') %>
+<link rel="stylesheet" href="/stylesheets/about.css" />
+<div class="container py-3">
+    <h1 class="text-center mb-3 heading">About Us</h1>
+    <!-- ================================================================================== -->
+    <div class="about-me container p-0 mb-3 d-block d-md-none">
+        <div id="carouselAbout" class="carousel carousel-dark slide px-0" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div
+                        class="overlay-image opacity-100"
+                        style="background-image: url('/assets/fitnessmavens.jpeg')"
+                    ></div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        class="overlay-image"
+                        style="
+                            background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+                        "
+                    ></div>
+                    <div class="about-container container py-2">
+                        <h3>About fitness Mavens</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo reprehenderi.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAbout" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAbout" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- ================================================================================== -->
+    <div class="row pt-4">
+        <div class="col-md-6">
+            <div class="about-me container py-2 mb-3 shadow-lg rounded ab-1">
+                <div class="row py-3 px-lg-5">
+                    <div class="col-4 text-center">
+                        <img class="img-fluid w-75" src="/assets/undraw_male_avatar.svg" alt="" />
+                        <div class="text-center float mx-3 py-3 d-flex justify-content-evenly">
+                            <i class="bi bi-instagram h4"></i>
+                            <i class="bi bi-facebook h4"></i>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <h2 class="h2">Hi! I am ......</h2>
+                        <h4 class="h4 lead">Fitness Trainer and Founder of @fitness.mavens</h4>
+                        <p class="py-3 lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A veniam modi expedita, ad nemo
+                            <a
+                                class="btn btn-link d-inline"
+                                data-bs-toggle="collapse"
+                                href="#collapseExample"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="collapseExample"
+                                >Read more...
+                            </a>
+                        </p>
+                        <p class="collapse" id="collapseExample">
+                            numquam rerum similique officiis facere deserunt porro voluptatum cum recusandae aliquam,
+                            quos id quisSome placeholder content for the collapse component. This panel is hidden by
+                            default but revealed when the user activates the relevant trigger.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="about-me container py-2 mb-3 shadow-lg rounded ab-1">
+                <div class="row py-3 px-lg-5">
+                    <div class="col-8 order-2">
+                        <h2 class="h2">Hi! I am ......</h2>
+                        <h4 class="h4 lead">Fitness Trainer and Founder of @fitness.mavens</h4>
+                        <p class="py-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A veniam modi expedita, ad nemo
+                            numquam rerum similique officiis facere deserunt porro voluptatum cum recusandae aliquam,
+                            quos id quisquam repellendus sed?
+                        </p>
+                    </div>
+                    <div class="col-4 text-center order-1">
+                        <img class="img-fluid w-75" src="/assets/undraw_female_avatar.svg" alt="" />
+                        <div class="text-center float py-3 mx-3 d-flex justify-content-evenly">
+                            <i class="bi bi-instagram h4"></i>
+                            <i class="bi bi-facebook h4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
